@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum (Project)</title>
+    <link rel="icon" type = "image/x-icon" href="assets/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
+</head>
+<body>
+
+        <div class="container-time">
+            <div class="time-details">
+                <span class="hours"></span>
+                <span class="colon">:</span>
+                <span class="minutes"></span>
+            </div>
+        </div>
+
+        <div class="container-message">
+            <div class="greeting-name-details">
+                <span class="greeting"></span>
+                <input type="text" class="userInput" spellcheck="false" id = "userName" autocomplete="off">
+                <!-- <span class="name-wrapper"> -->
+                    <span class="displayName"></span>
+                    <span class="period">.</span>
+                <!-- </span> -->
+            </div>   
+        </div>
+
+        <div class="container-question">
+            <h3 class="focus-question">What is your main focus for today?</h3>
+        </div>
+  
+        <div class="container-today">
+            <h3 class="today">TODAY</h3>
+
+            <div class="container-focus">
+                <input type="text" class="focusInput" spellcheck="false" id = "newFocus" autocomplete="off"> 
+            </div>
+            
+            <div class="newFocusDiv"></div>
+        </div>
+
+    <!-- delete icon starts here -->
+        <!-- <div class="deleteIcon"><span id = "clearButton" class="material-symbols-outlined">
+            backspace </div> -->
+    <!-- delete icon starts here -->
+
+    <!-- hidden div for Quote of the Day starts here -->
+        <div class="container-newDivQuotes">
+            <div class="newDivQuotes">
+                <div class="headerQuotes">"Quote of the Day"</div>
+                <div class="container-addQuotes">
+                    <textarea name="quoteInput" id="userQuotes" spellcheck="false" placeholder="your quote here"></textarea>
+                </div>
+                <div class="addButtonInner">
+                    <span class="material-symbols-outlined" id="addQuotesInner">
+                    add_circle
+                    </span> 
+                </div>
+            </div>
+        </div>
+    <!-- hidden div for Quote of the Day ends here -->
+
+    <!-- quotes: initial display starts here -->
+        <div class="container-quotes">
+            <div class="body-text">
+            </div>
+            <span class="material-symbols-outlined" id = "addQuotesOuter">
+                more_horiz
+            </span>
+        </div>
+
+        <div class="taskLabel">
+            <p class = "task-label">Tasks</p>
+        </div>
+<!-- To Do: Hidden div starts here -->
+        <div class="container-tasks">  
+
+            <div class="toDoLabel">
+                <p class = "toDo">To do:</p>
+            </div>
+
+            <div class="getStarted">
+                <p class="get-started">Add a task to get started</p>
+            </div>
+                <div class="container-taskList"></div>
+            <div class="newTaskIconGreen">
+                <p class="newTaskIcon">New Task</p>
+            </div>
+                
+              
+                
+            <div class="container-newTaskInput">
+                <input type="text" class="newTaskInput" placeholder="New Task">
+            </div>
+
+        </div>
+<!-- To Do: Hidden div ends here -->
+
+    <script src="timeGreeting.js"></script>
+    <script src ="background.js"></script>
+    <script src ="editName.js"></script>
+    <script src ="focus.js"></script>
+    <script src ="quotesArray.js"></script>
+    <script src ="tasks.js"></script> 
+</body>
+</html>
