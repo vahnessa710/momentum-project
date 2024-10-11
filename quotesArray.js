@@ -7,12 +7,13 @@ const quotes = [
     "\"Success is not in what you have, but who you are.\" - Bo Bennett",
     "\"Go confidently in the direction of your dreams. Live the life you have imagined.\" - Henry David Thoreau"
 ];
+
 const quotesDisplay = document.querySelector(".body-text");
 
 function updateQuotes() {
     let randomNumber = Math.random()* quotes.length;
     let newNumber = Math.floor(randomNumber);
-    document.getElementById(quotesDisplay.textContent = quotes[newNumber]);
+    quotesDisplay.textContent = quotes[newNumber];
 }
 
 updateQuotes(); // random quotes every refresh
@@ -22,9 +23,15 @@ const newDivQuotes = document.querySelector(".container-newDivQuotes");
 const containerQuotes = document.querySelector(".container-quotes");
 const containerTasks = document.querySelector(".container-tasks");
 const containerToday = document.querySelector(".container-today");
+
+const addQuotesInner = document.querySelector("#addQuotesInner"); // inner button
+const textarea = document.querySelector("#userQuotes"); 
+const containerQuestion = document.querySelector(".container-question");
+const containerFocus = document.querySelector(".container-focus");
+
 // outer add quote button on click
 outerButton.onclick = function() {
-    containerQuotes.style.display = "none";
+    containerQuotes.style.visibility = "visible";
     containerToday.style.display = "none";
     document.querySelector(".container-question").style.display = "none";
     document.querySelector(".container-focus").style.display = "none";
@@ -33,10 +40,7 @@ outerButton.onclick = function() {
     containerTasks.style.justifyContent = "flex-end";
 }
 
-const addQuotesInner = document.querySelector("#addQuotesInner"); // inner button
-const textarea = document.querySelector("#userQuotes"); 
-const containerQuestion = document.querySelector(".container-question");
-const containerFocus = document.querySelector(".container-focus");
+
 
 // inner add quote button on click
 addQuotesInner.onclick = () => {
@@ -45,23 +49,22 @@ addQuotesInner.onclick = () => {
         alert('Please enter quote.')
     } else {
         quotes.push(a);
-        console.log(quotes);
-        // containerFocus.style.display = "flex";
-        document.querySelector(".focusInput").style.display = "flex";
+        console.log(quotes)
+        containerFocus.style.display = "flex";
         containerQuestion.style.display = "flex";
-        quotesDisplay.innerText = '"' + quotes[quotes.length-1] + '"';
         containerQuotes.style.display = "flex";
+        quotesDisplay.innerText = '"' + quotes[quotes.length-1] + '"';
         newDivQuotes.style.display = "none";
-        
 
-        // if(document.querySelector(".focusInput").value === ""){
-        //     containerQuestion.style.display = "flex";
-        //     containerToday.style.display = "none";
-           
-        // }
+        if(document.querySelector(".focusInput").value === ""){
+            containerQuestion.style.display = "flex";
+            containerToday.style.display = "block";
+            containerQuotes.style.display = "flex";
+         }
+
     };
-
 }
+
 
 
 
