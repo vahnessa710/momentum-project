@@ -46,16 +46,19 @@ addQuotesInner.onclick = () => {
     } else {
         quotes.push(a);
         console.log(quotes);
+        // containerFocus.style.display = "flex";
+        document.querySelector(".focusInput").style.display = "flex";
         containerQuestion.style.display = "flex";
-        containerFocus.style.display = "flex";
         quotesDisplay.innerText = '"' + quotes[quotes.length-1] + '"';
         containerQuotes.style.display = "flex";
         newDivQuotes.style.display = "none";
-        containerToday.style.display = "block";
-        if(document.querySelector(".focusInput").value === ""){
-            containerQuestion.style.display = "flex";
-            containerToday.style.display = "none";
-        }
+        
+
+        // if(document.querySelector(".focusInput").value === ""){
+        //     containerQuestion.style.display = "flex";
+        //     containerToday.style.display = "none";
+           
+        // }
     };
 
 }

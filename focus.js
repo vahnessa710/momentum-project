@@ -24,6 +24,8 @@ function focus() {
     const label = document.createElement("label");
     label.textContent = focusInput.value;
     label.style.marginLeft = "10px";
+    label.style.fontSize = "28.8px";
+    label.style.verticalAlign = "middle";
     console.log(focusInput.value);
 
     // delete
@@ -31,6 +33,8 @@ function focus() {
     deleteFocus.className = "deleteFocus material-symbols-outlined";
     deleteFocus.innerText = "backspace";
     deleteFocus.id = "deleteFocus";
+    deleteFocus.style.verticalAlign = "middle";
+    deleteFocus.style.marginLeft = "5px";
 
     // delete on click
     deleteFocus.onclick = function() {
