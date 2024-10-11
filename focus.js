@@ -5,8 +5,7 @@ function focus() {
     // input field value
     const focusText = focusInput.value;
     console.log(focusText);
-    // will not accept empty
-    if(focusText.value === "") return;
+    
 
     // new div created each time; checkbox container
     const focusItem = document.createElement("div");
@@ -60,10 +59,14 @@ function focus() {
 
 document.querySelector(".focusInput").addEventListener("keypress", function(enter){
     if(enter.key === "Enter"){
+        if(document.querySelector(".focusInput").value === "") {
+            alert("Please enter your main focus for today.");
+        } else{
             document.querySelector(".focusInput").style.display = "none";
             focus();
             document.querySelector(".today").style.display = "block";
             document.querySelector(".focus-question").style.display = "none";
+        }
         }
     }
 )
