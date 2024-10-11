@@ -79,11 +79,7 @@ function addTask() {
     checkbox.onclick = function() {
     label.classList.toggle("done");
 }
-    // exit task
-    // const body = document.querySelector("body");
-    // body.onclick= function() {
-        
-    // };
+
 };
 
 newTaskInput.addEventListener("keypress", function(enter){
@@ -92,4 +88,11 @@ newTaskInput.addEventListener("keypress", function(enter){
             addTask();
         }
     }
-)
+);
+
+
+document.querySelector(".xButton").onclick = () => {
+    document.querySelector(".container-tasks").style.display = "none";
+}
+
+

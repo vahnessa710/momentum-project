@@ -197,6 +197,16 @@ body {
     background: #555; 
   }
 
+.xButton {
+    float: right;
+    font-size: 16px;
+}
+
+.xButton:hover {
+    cursor: pointer;
+    transform: scale(95%);
+}
+
 .taskLabel{
     display: flex;
     justify-content: flex-end;
