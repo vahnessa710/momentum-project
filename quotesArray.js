@@ -25,26 +25,26 @@ const containerTasks = document.querySelector(".container-tasks");
 const containerToday = document.querySelector(".container-today");
 
 const addQuotesInner = document.querySelector("#addQuotesInner"); // inner button
-const textarea = document.querySelector("#userQuotes"); 
+const quoteInput = document.querySelector("#userQuotes"); 
 const containerQuestion = document.querySelector(".container-question");
 const containerFocus = document.querySelector(".container-focus");
 
 // outer add quote button on click
 outerButton.onclick = function() {
     containerQuotes.style.visibility = "visible";
+    containerQuotes.style.marginTop = "19px";
     containerToday.style.display = "none";
     document.querySelector(".container-question").style.display = "none";
     document.querySelector(".container-focus").style.display = "none";
+    document.querySelector(".addButtonInner").style.marginTop = "5px";
     newDivQuotes.style.display = "flex";
-    newDivQuotes.style.marginTop = "18px";
+    newDivQuotes.style.marginTop = "15px";
     containerTasks.style.justifyContent = "flex-end";
-}
-
-
+};
 
 // inner add quote button on click
 addQuotesInner.onclick = () => {
-    let a = textarea.value;
+    let a = quoteInput.value;
     if(a === ""){
         alert('Please enter quote.')
     } else {
@@ -54,16 +54,18 @@ addQuotesInner.onclick = () => {
         containerQuestion.style.display = "flex";
         containerQuotes.style.display = "flex";
         quotesDisplay.innerText = '"' + quotes[quotes.length-1] + '"';
+        quotesDisplay.style.marginTop = "50px";
+        outerButton.style.marginTop = "50px";
         newDivQuotes.style.display = "none";
 
         if(document.querySelector(".focusInput").value === ""){
             containerQuestion.style.display = "flex";
             containerToday.style.display = "block";
             containerQuotes.style.display = "flex";
-         }
+         };
 
     };
-}
+};
 
 
 
