@@ -11,7 +11,9 @@ function updateBackground() {
         "url(https://images.unsplash.com/photo-1484201371242-997724e25910?q=80&w=1633&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
         "url(https://images.unsplash.com/photo-1516528387618-afa90b13e000?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
         "url(https://images.unsplash.com/photo-1574216887926-192332d202db?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
-        "url(https://vasenev.com/wp-content/uploads/2017/06/IMG_4552.jpg)"
+        "url(https://vasenev.com/wp-content/uploads/2017/06/IMG_4552.jpg)",
+        "url(https://images.unsplash.com/photo-1532299118013-f1582eaf8500?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+        "url(https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
        
     ]
     
