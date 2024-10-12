@@ -54,8 +54,8 @@ addQuotesInner.onclick = () => {
         containerQuestion.style.display = "flex";
         containerQuotes.style.display = "flex";
         quotesDisplay.innerText = '"' + quotes[quotes.length-1] + '"';
-        quotesDisplay.style.marginTop = "50px";
-        outerButton.style.marginTop = "50px";
+        quotesDisplay.style.marginTop = "20px";
+        outerButton.style.marginTop = "20px";
         newDivQuotes.style.display = "none";
 
         if(document.querySelector(".focusInput").value === ""){
